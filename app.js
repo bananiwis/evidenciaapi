@@ -11,6 +11,7 @@ const { eliminarUsuario, obtenerUsuarios } = require('./usuarios');
 const validar = require('./validar');
 const saltRounds = 10;
 const myPlaintextPassword = 's0/\/\P4$$w0rD';
+mysql://root:jOLHptplOlEBLZtPIdUywMXLvQLedKPK@ballast.proxy.rlwy.net:32556/railway
 
 app.use(cors({
     origin: process.env.URLFRONTEND || 'http://localhost:5173', 
@@ -18,8 +19,8 @@ app.use(cors({
 }))
 
 app.use(session({
-    secret: process.env.SECRETSESSION 'oblea'
-    proxy: process.env.NODE_ENV === 'production',
+    secret: process.env.SECRETSESSION || 'oblea',
+    Proxy: process.env.NODE_ENV === 'production',
     cookie: {
         secure: true,
         sameSite: 'none'

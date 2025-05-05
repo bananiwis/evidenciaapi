@@ -7,7 +7,7 @@
     "md5": "^2.3.0",
     "mysql2": "^3.14.1"
   },
-  "scripts": {
-    "dev": "node --watch app.js"
-  }
+"scripts": {
+  "dev": "node --watch app.js",
+  "start": "node app.js"
 }
